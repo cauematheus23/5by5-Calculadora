@@ -1,9 +1,28 @@
-﻿float n1, n2, sum, sub, mul, div;
+﻿float n1, n2, n3,n4,sum, sub, mul, div;
 int c;
 Console.Write("Digite o primeiro numero: ");
 n1 = float.Parse(Console.ReadLine());
 Console.Write("Digite o segundo numero: ");
 n2 = float.Parse(Console.ReadLine());
+while (n2 == 0)
+{
+        Console.WriteLine("Digite um  novo valor para n2 diferente de 0");
+        n2 = float.Parse(Console.ReadLine());
+}
+Console.Write("Digite o terceiro numero: ");
+n3 = float.Parse(Console.ReadLine());
+while (n3 == 0)
+{
+    Console.WriteLine("Digite um  novo valor para n3 diferente de 0");
+    n3 = float.Parse(Console.ReadLine());
+}
+Console.Write("Digite o quarto numero: ");
+n4 = float.Parse(Console.ReadLine());
+while (n4 == 0)
+{
+    Console.WriteLine("Digite um  novo valor para n4 diferente de 0");
+    n4 = float.Parse(Console.ReadLine());
+}
 c = 1;
 while (c != 0)
 {
@@ -11,33 +30,23 @@ while (c != 0)
     c = int.Parse(Console.ReadLine());
     if (c == 1)
     {
-        sum = n1 + n2;
-        Console.WriteLine($"{n1} + {n2} = {sum}");
+        sum = n1 + n2 + n3 + n4;
+        Console.WriteLine($"{n1} + {n2} + {n3} + {n4} = {sum}");
     }
     else if (c == 2)
     {
-        sub = n1 - n2;
-        Console.WriteLine($"{n1} - {n2} = {sub}");
+        sub = n1 - n2 - n3 - n4;
+        Console.WriteLine($"{n1} - {n2} - {n3} - {n4} = {sub}");
     }
     else if (c == 3)
     {
-        mul = n1 * n2;
-        Console.WriteLine($"{n1} * {n2} = {mul}");
+        mul = n1 * n2 * n3 * n4;
+        Console.WriteLine($"{n1} * {n2} * {n3} * {n4} = {mul}");
     }
     else if (c == 4)
     {
-        if (n2 == 0) // && and, || or
-        {
-            do
-            {
-                Console.WriteLine("Impossivel dividir por 0");
-                Console.WriteLine("Digite um  novo valor para n2");
-                n2 = float.Parse(Console.ReadLine());
-            } while (n2 == 0);
-
-        }
-        div = n1 / n2;
-        Console.WriteLine($"{n1} / {n2} = {div}");
+        div = n1 / n2 /n3 /n4;
+        Console.WriteLine($"{n1} / {n2} / {n3} / {n4} = {div}");
     }
     else if (c == 0)
     {
@@ -45,10 +54,29 @@ while (c != 0)
     }
     else if (c == 5)
     {
-        Console.WriteLine("Digite o primeiro numero: ");
+        Console.Write("Digite o primeiro numero: ");
         n1 = float.Parse(Console.ReadLine());
-        Console.WriteLine("Digite o segundo numero: ");
+        Console.Write("Digite o segundo numero: ");
         n2 = float.Parse(Console.ReadLine());
+        while (n2 == 0)
+        {
+            Console.WriteLine("Digite um  novo valor para n2 diferente de 0");
+            n2 = float.Parse(Console.ReadLine());
+        }
+        Console.Write("Digite o terceiro numero: ");
+        n3 = float.Parse(Console.ReadLine());
+        while (n3 == 0)
+        {
+            Console.WriteLine("Digite um  novo valor para n3 diferente de 0");
+            n3 = float.Parse(Console.ReadLine());
+        }
+        Console.Write("Digite o quarto numero: ");
+        n4 = float.Parse(Console.ReadLine());
+        while (n4 == 0)
+        {
+            Console.WriteLine("Digite um  novo valor para n4 diferente de 0");
+            n4 = float.Parse(Console.ReadLine());
+        }
     }
     else
     {
